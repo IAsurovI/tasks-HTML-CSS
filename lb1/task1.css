@@ -1,0 +1,28 @@
+table{
+    border: 2px solid darkgray;
+    border-collapse: collapse;
+    margin-left: 100px;
+
+}
+tbody th:hover{
+    background-color: gold;
+}
+tbody td:hover{
+    background-color: lightgreen;
+}
+
+th{
+    width:100px;
+    height: 20px;
+    background-color: gray;
+    border:2px solid black;
+
+}
+
+td{
+    width:100px;
+    height: 20px;
+    background-color: lightgray;
+    border:2px solid black;
+
+}
