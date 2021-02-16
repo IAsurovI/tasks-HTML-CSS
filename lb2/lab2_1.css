@@ -1,0 +1,35 @@
+.grid-container {/*родительский контейнер, который объеденяет в себе все дочерние*/
+        display: grid; /*задаёт структуру*/
+        grid-template-areas:/*задаёт структуру*/
+        'header header header header header header'/*6 header'ов - верхняя полоса, занимает всю ширину страницы*/
+        'left main main main main right'/*left & right - боковые колонки, центральная, main, */
+        'footer footer footer footer footer footer'; /*6 footer'ов - подвал, который занимает всю ширину экрана*/
+        grid-gap: 10px; /* расстояние между блоками */
+}
+.grid-item { /*Применяются свойства ко всем дочерним контейнерам*/
+        background-color: lightblue; /*Фоновая заливка контейнеров*/
+        text-align: center;/*Задаёт расположение по центру*/
+        padding: 50px; /*Задаёт внутренние отступы*/
+}
+#item1 {/*используется для того, чтобы в grid-template-areas задать структуру страницы*/
+        grid-area: header;
+}
+#item2 {/*используется для того, чтобы в grid-template-areas задать структуру страницы*/
+        grid-area: left;
+}
+#item3 {/*используется для того, чтобы в grid-template-areas задать структуру страницы*/
+        grid-area: main;
+}
+#item4 {/*используется для того, чтобы в grid-template-areas задать структуру страницы*/
+        grid-area: right;
+}
+#item5 {/*используется для того, чтобы в grid-template-areas задать структуру страницы*/
+        grid-area: footer;
+}
+@media (max-width:600px ) { /*Адаптивный дизайн. Если задать высоту, то блоки не будут сдвигаться при изменении размера экрана, но будут сжиматься*/
+#item1 { grid-area: 1 / 1 / span 1 / span 6; }
+#item2 { grid-area: 2 / 1 / span 1 / span 6; }
+#item3 { grid-area: 3 / 1 / span 4 / span 6; }
+#item4 { grid-area: 7 / 1 / span 1 / span 6; }
+#item5 { grid-area: 8 / 1 / span 1 / span 6; }
+}

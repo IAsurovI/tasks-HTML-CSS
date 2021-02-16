@@ -1,0 +1,95 @@
+h3 {
+    margin: 10px;
+    width:100%;
+    border:lightgray solid 3px;
+    height: 50px;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.submit_style {
+    display: inline;
+    width: 10%;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(214, 243, 233);
+    border: 3px solid green;
+    border-radius: 5px;
+}
+.submit_style:hover{
+    background-color: rgb(180, 235, 216);
+    border:3px solid maroon;
+    color:midnightblue;
+}
+
+.list_block li {
+    height: 20px;
+    background-color: lightyellow;
+    display: block;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid blue;
+    border-radius:3px;
+    width: 20%;
+    text-align:center;
+
+}
+.list_block li:hover{
+    color:orangered;
+}
+
+.list_inline li {
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid blue;
+    width: 20%; 
+    border-radius: 3px;
+    
+
+}
+.list_inline li:hover{
+    border: 5px solid orange;
+    border-radius: 2px;
+}
+
+.list_new li{
+    display:inline;
+    margin:40px;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    border:3px solid purple;
+    border-radius: 3px;
+    background-color: rgb(231, 231, 35);
+    color:saddlebrown;
+    
+}
+.list_new li:hover{
+    border:4px solid darkslategray;
+    border-radius:2px;
+}
+
+.list_newtwo li{
+    display: grid;
+    background-color: lightslategrey;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid blue;
+    width: 20%;
+    border-radius: 5px;
+    margin:20px;
+    text-align:center;
+}
+.list_newtwo li:hover{
+    background-color: maroon;
+    border-radius: 6px;
+    /* margin: 15px; */
+    color:fuchsia;
+    padding:25px;
+    text-align:right;
+}
