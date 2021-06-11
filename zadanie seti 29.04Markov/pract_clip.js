@@ -151,7 +151,6 @@ function drawEqualSectors(number,radius){
         context.beginPath(); 
         context.moveTo(centerX,centerY);
         context.lineTo(currentX,currentY);
-        let ugol=angle;
         context.lineWidth = 1;
         context.font = "16px serif";
         context.strokeText(qw[i], currentX, currentY);
